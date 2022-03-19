@@ -1,0 +1,150 @@
+:root{
+    --primaria: #157497;
+    --secundaria: #094f69;
+
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+.container{
+    margin-left: 90px;
+    margin-right: 90px;
+}
+
+body{
+    font-family: 'Times New Roman', Times, serif;
+    color: white;
+}
+
+header{
+    background: var(--primaria);
+    border-bottom: 2px solid;
+    border-color: black;
+}
+
+header .container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .container h3{
+    font-size: 40px;
+}
+
+
+header .container a{
+    text-decoration: none;
+    color: white;
+    margin-right: 40px;
+
+    font-size: 25px;
+    transition: .3s ease all;
+}
+
+header .container a:hover{
+    color: var(--secundaria);
+}
+
+header .container button{
+    border: none;
+    background: transparent;
+    font-size: 20px;
+    color: white;
+    margin-left: 15px;
+
+    cursor: pointer;
+    transition: .3s ease all;
+}
+
+header .container button:hover{
+    color: var(--secundaria);
+}
+
+main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    height: 920px;
+    background: url('/img/login.jpg')
+}
+
+main .formulario{
+    height: 400px;
+    width: 600px;
+    
+    border: 2px solid;
+    border-color: black;
+    border-radius: 40px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+
+    background: var(--primaria);
+}
+
+main .formulario .titulo{
+    font-size: 40px;
+    margin-top: 80px;
+}
+
+main input{
+    height: 40px;
+    width: 250px;
+    border-radius: 10px;
+    background-color: transparent;
+    color: white;
+    font-size: 20px;
+}
+
+main input::placeholder{
+    color: white;
+    font-size: 20px;
+}
+
+main .formulario .login-senha h3{
+    padding-right: 10px;
+    font-size: 25px;
+}
+
+main .formulario .login-senha .login{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 14px;
+}
+
+main .formulario .login-senha .senha{
+    display: flex;
+    flex-direction: row;
+    margin-left: 18px;
+}
+
+
+main .botao{
+    margin-left: 400px;
+    margin-bottom: 60px;
+}
+
+main .botao button{
+    font-size: 30px;
+    border-radius: 40px;
+    width: 180px;
+
+    cursor: pointer;
+    transition: .3s ease all;
+}
+
+main .botao button:hover{
+    color: white;
+    background: var(--primaria);
+}
+
+

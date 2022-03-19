@@ -1,0 +1,198 @@
+:root{
+    --primaria: #1c2529;
+    --secundaria: #0b0e1c;
+
+    --hover: #579fbf;
+
+    --larg: 361px;
+    --alt: 250px; 
+}
+
+.container{
+    margin-left: 90px;
+    margin-right: 90px;
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body{
+    background: var(--primaria);
+    font-family: 'Times New Roman', Times, serif;
+    color: white;
+}
+
+
+/* Configurações <header>*/
+header{
+    background: url('/img/menu-principal.jpg');
+    height: 760px;
+}
+
+header .container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .imagem-principal .container h3{
+    font-size: 60px;
+}
+
+header .imagem-principal .container p{
+    font-size: 25px;
+}
+
+header div .logo-principal{
+    font-size: 40px;
+}
+
+header div nav a{
+    text-decoration: none;
+    color: white;
+    margin-right: 40px;
+
+    font-size: 25px;
+
+    transition: .3s ease all;
+}
+
+header div nav a:hover{
+    color: var(--hover);
+}
+
+header .botao{
+    margin-left: 15px;
+    border: none;
+    background-color: transparent;
+    color: white;
+    font-size: 20px;
+
+    cursor: pointer;
+    transition: .3s ease all;
+}
+
+header .botao:hover{
+    color: var(--hover);
+} 
+
+header .imagem-principal .container{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+
+    height: 445px;
+}
+
+/* Configurações <main>*/
+main {
+    background: var(--secundaria);
+}
+
+main a{
+    text-decoration: none;
+    color: white;
+
+    transition: .3s ease all;
+}
+
+main .container{
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+main .pesquisa{
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+}   
+
+main .pesquisa input{
+    background: transparent;
+    border-radius: 10px;
+    margin-bottom: 5px;
+    color: white;
+
+    width: 250px;
+    height: 30px;
+}
+
+main .pesquisa input::placeholder{
+    color: white;
+    font-size: 20px;
+}
+
+main .pesquisa a:hover{
+    text-decoration: none;
+    color: var(--hover);
+}
+
+main .pesquisa i{
+    padding-top: 8px;
+    padding-left: 5px;
+}
+
+main .caroucel1 img{
+    width: var(--larg);
+    height: var(--alt);
+}
+
+main .caroucel2 img{
+    width: var(--larg);
+    height: var(--alt);
+}
+
+main .caroucel3 img{
+    width: var(--larg);
+    height: var(--alt);
+}
+
+main .caroucel4 img{
+    width: var(--larg);
+    height: var(--alt);
+}
+
+
+/* Configurações <footer>*/
+footer{
+    border-top: 2px solid;
+    border-color: white;
+
+    background: var(--secundaria);
+}
+
+footer .container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+footer .autor{
+    display: flex;
+    flex-direction: row;
+}
+
+footer .autor img{
+    margin-top:5px;
+    width: 5%;
+}
+
+footer .autor h2{
+    padding-top: 20px;
+    padding-left: 10px;
+}
+
+footer .email {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+
